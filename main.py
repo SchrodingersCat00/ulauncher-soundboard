@@ -12,7 +12,8 @@ from ulauncher.api.shared.action.DoNothingAction import DoNothingAction
 
 
 EXTENSION_ICON = 'images/icon.png'
-sound_files = [sound_file.name[:-4] for sound_file in os.scandir('/home/kobe/.local/share/ulauncher/extensions/soundboard/sound_files/')]
+HOME = os.getenv("HOME")
+sound_files = [sound_file.name[:-4] for sound_file in os.scandir('%s/.local/share/ulauncher/extensions/soundboard/sound_files/' % HOME)]
 
 
 class ItemEnterEventListener(EventListener):
