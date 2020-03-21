@@ -1,0 +1,19 @@
+{
+    "required_api_version": "^2.0.0",
+    "name": "Soundboard",
+    "description": "Plays sounds",
+    "developer_name": "SchrödingersCat00",
+    "icon": "images/icon.png",
+    "options": {
+      "query_debounce": 0.1
+    },
+    "preferences": [
+      {
+        "id": "demo_kw",
+        "type": "keyword",
+        "name": "Soundboard",
+        "description": "Plays sounds",
+        "default_value": "sb"
+      }
+    ]
+}
